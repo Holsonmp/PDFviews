@@ -1,0 +1,65 @@
+.canvas__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.zoom {
+    min-width: 30px;
+    min-height: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50%;
+    outline: #fff;
+    border: 1px solid #b3b3b3;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-left: -25px;
+    background: #fff;
+    color: #919191;
+    padding: 4px 3px;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+  text-align: center;
+  width: 20%;
+  height: 2rem;
+  font-size: 1rem;
+}
+.zoom:hover {
+  background-color: #ddd;
+  opacity: 0.8;
+  cursor: pointer;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.print-button {
+  border: none;
+  color: #005bac;
+  outline: #fff;
+  border: 1px solid #005bac;
+  border-radius: 50%;
+  padding: 12px 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+/* Hide Print button */
+@media print {
+  .navigation {
+    display: none;
+  }
+}
